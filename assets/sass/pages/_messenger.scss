@@ -1,0 +1,231 @@
+/* TARTISMA */
+.argue-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    // padding-top: 20%;
+    // background-color: #f4f4f4;
+    // background-image: url("../../images/messenger_bg.jpg");
+    --chat-bg-color: #03a9f4;
+  }
+  .argue-wrapper:before {
+    content: ' ';
+    display: block;
+  }
+  .argue-back {
+    position: absolute;
+    top: 0;
+  }
+  .argue-wrapper .argue-content {
+    background-color: #fff;
+  }
+  .argue-image {
+    float: left;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .argue-image.argue-image-default {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .argue-message {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+  }
+  .argue-message:before {
+    content: ' ';
+    display: block;
+  }
+  .argue-message:last-of-type {
+    margin-bottom: 0;
+  }
+  .argue-message-wrapper {
+    max-width: 70%;
+    display: table;
+    margin: 0;
+    padding-top: 5px;
+    padding-right: 10px;
+    position: relative;
+  }
+  .argue-message-wrapper:before {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    top: 20px;
+    position: absolute;
+    z-index: 2;
+  }
+  @media (max-width:500px) {
+    .argue-message-wrapper {
+        max-width: 100%;
+        margin: 0;
+    }
+  }
+  .argue-message-wrapper p {
+    padding: 10px 20px;
+    color: #fff;
+    border-top: 1px solid;
+  }
+  .argue-message-wrapper p:first-of-type {
+    border-top: 0 !important;
+  }
+  .argue-message-author .argue-message-wrapper,
+  .argue-message-author .argue-message-content {
+    float: left;
+    padding: 0;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+  .argue-message-author .argue-message-wrapper:before {
+    left: -13px;
+    top: 13px;
+    border-right-color: #91d98a;
+  }
+  .argue-message-author p {
+    background-color: #91d98a;
+    border-top-color: #7dc576;
+  }
+  .argue-message-commenter .argue-message-wrapper,
+  .argue-message-commenter .argue-message-content {
+    float: right;
+  }
+  .argue-message-commenter .argue-message-wrapper:before {
+    right: -8px;
+    top: 15px;
+    border-left-color: var(--chat-bg-color);
+  }
+  .argue-message-commenter p {
+    background: var(--chat-bg-color);
+    border-top-color: var(--chat-bg-color);
+  }
+  .argue-message-commenter img {
+    float: right !important;
+  }
+  .argue-message-content {
+    display: table;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .argue-message-content:before {
+    content: ' ';
+    display: block;
+  }
+  .argue-details {
+    display: none;
+    position: absolute;
+    bottom: -27px;
+    white-space: nowrap;
+    clear: both;
+    width: 100%;
+    line-height: 2;
+    font-size: .8em;
+  }
+  .argue-details:before {
+    content: ' ';
+    display: block;
+  }
+  .argue-details span {
+    margin-right: 4px;
+    color: #bbb;
+  }
+  
+  .argue-message-wrapper:hover > .argue-details {
+    display: block
+  }
+
+
+// Message Sender
+.message-sender, 
+.comment-block {
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  background: var(--color04);
+  z-index: 999;
+  opacity: 0.9;
+}
+.message-sender .comment-respond, 
+.comment-block .comment-respond {
+  width: 100%;
+}
+.message-sender .author_list_img,
+.comment-block .author_list_img {
+  height: 45px;
+  width: 45px;
+}
+
+
+.message-sender form,
+.comment-block form {
+  display: inline-flex;
+  width: 100%;
+}
+
+.submit_msg,
+.submit_comment {
+  color: var(--color02);
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.message-form textarea,
+.post-form textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+  // Inbox
+.inbox-messages{}
+ul.inbox-messages li {
+  background: var(--white);
+  margin-bottom: 3px;
+}
+
+.message-item{
+  display: flex;
+  padding: 1em;
+}
+
+.message-item img {
+  margin-right: 1em;
+}
+
+.message-info {
+  width: 100%;
+  height: 70px;
+  padding-top: 1em;
+  display: block;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.message-info h3{
+  margin: 0;
+}

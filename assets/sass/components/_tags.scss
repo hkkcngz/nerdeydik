@@ -1,0 +1,58 @@
+/* post_tags by hc */ 
+.post_tags {
+    list-style: none;
+    margin: 1em;
+    overflow: hidden; 
+    padding: 0;
+  }
+  
+  .post_tags li {
+    float: left; 
+  }
+  
+  .post_tags .tag {
+    background: var(--gradient-bg);
+    border-radius: 3px 0 0 3px;
+    color: #fff;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+  }
+  
+  .post_tags .tag::before {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: inset 0 7px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+  }
+  
+  .post_tags .tag::after {
+    background: var(--color04);
+    border-bottom: 13px solid var(--white);
+    border-left: 10px solid #f56a6a;
+    border-top: 13px solid var(--white);
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .post_tags .tag:hover {
+    background: var(--gradient-bg-ters);
+    color: white;
+  }
+  
+  .post_tags .tag:hover::after {
+     border-left-color: #6375bd; 
+  }
+  /* post_tag */

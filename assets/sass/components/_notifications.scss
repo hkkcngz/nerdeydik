@@ -1,0 +1,59 @@
+// notifications
+ul.notifications {
+	list-style: none;
+	padding: 0;
+}
+
+.notifications li {
+    position: relative;
+    padding: 10px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.notifications li span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 48px);
+    padding: 0 1em;
+    user-select: none;
+}
+.notifications li form {
+    display: none;
+    position: absolute;
+    right: 1em;
+    margin: 0;
+}
+.notifications li:hover > form {
+    display: inherit;
+}
+input.del-btn {
+    padding: 0 1em;
+    height: 3em;
+    line-height: 3.1em;
+    cursor: pointer;
+}
+.notifications li.unread {
+    background: var(--border-color);
+}
+.notifications li:hover {
+    background: var(--theme-bg-color);
+}
+
+span.badge.notification-count {
+    background: red;
+    font-size: 10px;
+    padding: 5px 7px;
+    margin-top: -7px;
+}
+
+
+@media (max-width:500px) {
+    .tabs label svg {
+        width: 30px;
+    }
+}

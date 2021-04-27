@@ -1,0 +1,19 @@
+.screen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 60px;
+}
+
+main {
+    width: 100%;
+}
+
+main, footer{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.single .screen {
+    padding-bottom: 185px;
+}

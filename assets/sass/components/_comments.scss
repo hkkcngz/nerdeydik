@@ -1,0 +1,197 @@
+.hc-author_photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  transition: transform 0.15s linear;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  transform: rotate(+2deg);
+}
+
+.hc-author_photo img:hover {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(-1deg);
+}
+
+.hc-author_photo.in_comment {
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+}
+
+// Square Img 
+
+.square_photo img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  transition: transform 0.15s linear;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  transform: rotate(+2deg);
+}
+
+.square_photo img:hover {
+  background: var(--white);
+  border: 1px solid var(--color04);
+  box-shadow: 0px 0px 10px var(--shadow-3);
+  transform: rotate(-1deg);
+}
+
+// Square
+
+/* NORMAL YORUM */
+
+ /* WP Comment Form */
+form#commentform {
+  display: flex;
+  flex-direction: column;
+}
+
+form#commentform p.logged-in-as {
+  display: none;
+}
+
+form#commentform p.comment-form-comment {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+form#commentform p {
+  padding: 0;
+}
+
+form#commentform textarea#comment {
+  min-height: 4em;
+  line-height: 2;
+  padding-left: 1em;
+  padding-right: 1em;
+  resize: vertical;
+}
+
+  .comment-block input,
+  .comment-block textarea {
+    outline: none;
+    border: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    color: var(--main-color);
+  }
+  .comment-block input::-webkit-input-placeholder,
+  .comment-block textarea::-webkit-input-placeholder {
+    color: #ced2db;
+  }
+  .comment-block input::-moz-placeholder,
+  .comment-block textarea::-moz-placeholder {
+    color: #ced2db;
+  }
+  .comment-block input:-moz-placeholder,
+  .comment-block textarea:-moz-placeholder {
+    color: #ced2db;
+  }
+  .comment-block input:-ms-input-placeholder,
+  .comment-block textarea:-ms-input-placeholder {
+    color: #ced2db;
+  }
+  
+  .comments {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 500px) {
+    .comments li { 
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  
+    .comment-photo {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+      margin-bottom: -20px;
+    }
+  }
+  
+  
+  .comment-wrap {
+    margin-bottom: 1.2em;
+    display: flex;
+    width: 100%;
+  }
+  .comment-photo {
+    position: relative;
+    padding-top: 0.625rem;
+    display: flex;
+    width: 3.5rem;
+    z-index: 2;
+  }
+  .comment-photo .avatar {
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    background-size: contain;
+  }
+  .comment-block {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0.1875rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  }
+  .yorum-kutusu textarea,
+  .yorum-kutusu input {
+    padding: 0 20px;
+  }
+  .comment-block input[type=submit] {
+    background: var(--header-bg-color);
+    padding: 1em;
+    margin: 1em 0;
+    cursor: pointer;
+  }
+
+  .comment-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #acb4c2;
+    font-size: 0.875rem;
+  }
+  .comment-date {
+    //float: left;
+  }
+  .comment-actions {
+    //float: right;
+  }
+  .comment-actions li {
+    display: inline;
+  }
+  .comment-actions li.complain {
+    padding-right: 0.75rem;
+    border-right: 1px solid #e1e5eb;
+  }
+  .comment-actions li.reply {
+    padding-left: 0.75rem;
+    padding-right: 12px;
+    border-right: 1px solid #e1e5eb;
+  }
+  .comment-actions li:hover, .comment-actions li a:hover {
+    color: #0095ff;
+  }
+
+  .comment-like {
+    padding-left: 0.5em;
+  }
+  .comment-like svg {
+    width: 23px;
+    height: 23px;
+  }

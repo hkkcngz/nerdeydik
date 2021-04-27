@@ -1,0 +1,19 @@
+ul.actions {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    font: message-box;
+    li {
+        margin-right: 7px;
+    }
+}
+
+.actions .more-item{
+    cursor: pointer;
+}
+
+ul.actions svg {
+    height: 2em;
+}

@@ -1,0 +1,40 @@
+form {
+    padding: 1em;
+
+    .form-group{
+        display: inline-block;
+        text-align: left;
+        padding: 5.5px 10px;
+        color: inherit;
+    }
+}
+
+// Form Standart
+.form-standart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-standart input  {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.form-standart label {
+    width: 100%;
+    margin-bottom: 0em;
+    padding: .5em
+}
+
+.form-standart input[type=submit] {
+    cursor: pointer;
+    color: var(--color02);
+    background: var(--color04);
+}
+
+.form-standart input[type=submit]:hover {
+    background: var(--color02);
+    color: var(--color04);
+}

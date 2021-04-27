@@ -1,0 +1,26 @@
+/*
+Theme Name:   Nerdeydik
+Theme URI:    nerdeydik.com
+Author:       Hakki Cengiz
+Author URI:   hakkicengiz.com
+Description:  New Social Media by @hkkcngz.
+Version:      1.0.1
+Text Domain:  nerdeydik
+Tags:         blog, portfolio, grid-layout, one-column, accessibility-ready
+*/
+
+
+/*
+** WP
+*/
+
+.status-draft {
+    display: none;
+}
+
+
+/* Düzeltmeler */
+
+.post-add-contents_fixed {
+    overflow: auto;
+}

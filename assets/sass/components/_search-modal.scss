@@ -1,0 +1,49 @@
+// Let's Share
+#modal-share, #modal-search {
+    background: var(--dark-bg, #000);
+    .modal-dialog {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      margin: 0;
+    }
+    .modal-header .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      // reset
+      color: inherit;
+      box-shadow: unset;
+      height: unset;
+    }
+    .modal-title {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+      color: #fff;
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        width: 100%;
+        max-width: 300px;
+      }
+      a.btn-facebook {
+        background: #3b5998;
+      }
+      a.btn-twitter {
+        background: #00acee;
+      }
+      a.btn-linkedin {
+        background: #0e76a8;
+      }
+      a.btn-email {
+        background: #ddd;
+        color: #444;
+      }
+    }
+  }

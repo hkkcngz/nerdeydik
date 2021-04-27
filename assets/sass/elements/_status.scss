@@ -1,0 +1,22 @@
+/* Post Durumlar  */ 
+.article-item.type-durumlar .article-author-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 210px;
+  background: var(--dark-bg, #000);
+  color: #fff;
+  border-radius: 30px;
+  margin-bottom: 1em;
+}
+.article-item.type-durumlar a.image {
+  display: block;
+    overflow: visible;
+    width: auto;
+}
+.type-durumlar img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

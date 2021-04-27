@@ -1,0 +1,125 @@
+// MENU
+.bottom-menu {
+    // ul.list
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    // display
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-height: 60px; // as possible as fix height
+  
+    // text
+    background: var(--gradient-bg, #fff);
+    color: var(--white);
+    overflow: hidden;
+    // border-radius
+  
+    li {
+      // display
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 20vw;
+      padding: 0;
+      font-size: var(--font-size, 18px);
+      a {
+        // display
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 60px;
+        min-width: 60px;
+        // padding
+        padding: 0;
+        // text
+        color: inherit;
+        text-decoration: none;
+        border: none;
+        &:hover {
+          background: var(--shadow-2, #777);
+        }
+        span {
+          padding-left: 10px;
+        }
+      }
+    }
+    
+    svg {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+  .bottom-menu-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10002;
+  }
+  .top-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10002;
+  }
+  @media only screen and (max-width: 600px) {
+    .bottom-menu li span {
+      display: none;
+    }
+  }
+// MENU
+  
+  // Let's Share
+  #modal-share, #modal-search {
+    background: var(--dark-bg, #000);
+    .modal-dialog {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      margin: 0;
+    }
+    .modal-header .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      // reset
+      color: inherit;
+      box-shadow: unset;
+      height: unset;
+    }
+    .modal-title {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+      color: #fff;
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        width: 100%;
+        max-width: 300px;
+      }
+      a.btn-facebook {
+        background: #3b5998;
+      }
+      a.btn-twitter {
+        background: #00acee;
+      }
+      a.btn-linkedin {
+        background: #0e76a8;
+      }
+      a.btn-email {
+        background: #ddd;
+        color: #444;
+      }
+    }
+  }

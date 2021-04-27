@@ -1,0 +1,119 @@
+// Articles
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: .5em;
+    margin-bottom: 1em;
+  }
+  .article-item {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 7px;
+    background: var(--white);
+    color: var(--color02);
+  }
+  /* Post Thumbnail Standart */ 
+  .article-item a.image {
+    width: 100%;
+    color: inherit;
+  }
+  .article-item img.image {
+    height: 210px;
+    object-fit: cover;
+    width: 100%;
+  }
+  // ON SINGLE //
+  .single .article-item img.image {
+    height: auto;
+  }
+  //.single .article-item {
+  //  margin-bottom: 2em;
+  // }
+
+  /* ON HOME 
+  .home .article-item, 
+  .search .article-item, 
+  .archive .article-item {
+    background: var(--gradient-bg-ters);
+    color: var(--white);
+  }
+  */
+  .home .article-item h3, 
+  .search .article-item h3, 
+  .archive .article-item h3 {
+    font-size: 1em;
+    margin: 0;
+  }
+  .home .article-item p, 
+  .search .article-item p, 
+  .archive .article-item p {
+    margin: 0;
+    padding: 0 1em;
+    text-align: left;
+  }
+
+  .home .article-item > p, 
+  .search .article-item > p,
+  .archive .article-item > p {
+    height: 65.99983px;
+    /* Fallback for non-webkit */
+    margin-bottom: 1em;
+    padding: 0;
+    font-size: 13.3333px;
+    line-height: 1.65;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+
+  @media (min-width: 600px ) and (max-width: 1024px) {
+    .home .article-item, 
+    .search .article-item,
+    .archive .article-item {
+        flex: 1 0 41%;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1920px ) {
+    .home .article-item, 
+    .search .article-item,
+    .archive .article-item {
+        flex: 1 0 31%;
+    }
+  }
+  @media (min-width: 1921px) {
+    .home .article-item, 
+    .search .article-item,
+    .archive .article-item {
+        flex: 1 0 21%;
+    }
+  }
+  
+  /* Post Youtubelist  */ 
+  .article-item.type-youtubelist .list__vid {
+    width: 100%;
+  }
+  .article-item.type-youtubelist .list {
+    margin-bottom: 1em;
+  }
+
+
+  // Area POST Author
+.area_post_author {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 0;
+}
+
+// 
+article .wp-post-image {
+  border-radius: 20px;
+  padding: 15px;
+}

@@ -1,0 +1,37 @@
+ul.modes {
+    position: absolute;
+    top: 60px;
+}
+
+.modes li {
+    line-height: 60px;
+}
+
+#wheelit {
+    transition: 1s all;
+}
+
+// Translate
+.translate #wheelmenu,
+.translate2x #wheelmenu,
+.translate3x #wheelmenu {
+    display: none;
+}
+
+/* Translate 1x */
+.translate .modes {
+    display: block;
+    top: 0;
+}
+
+/* Translate 2x */
+.translate2x .modes {
+    display: block;
+    top: -60px;
+}
+
+/* Translate 3x */
+.translate3x .modes {
+    display: block;
+    top: -120px;
+}

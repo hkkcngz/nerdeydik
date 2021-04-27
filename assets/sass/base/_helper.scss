@@ -1,0 +1,129 @@
+.body-bg {
+    background: var(--color04);
+}
+
+.gradient-bg {
+    background: var(--gradient-bg, #fff);
+    color: #333;
+}
+
+.fff{
+    background: var(--white);;
+}
+
+.login-bg{
+    background: var(--login-bgcolor);;
+}
+
+.white {
+    color: #fff;
+}
+
+.black{
+    color: black;
+}
+
+.shadow {
+    box-shadow: 0 1px 2px var(--shadow-2);
+}
+.radius {
+    border-radius: 7px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--border-colored);
+}
+.border-top {
+    border-top: 1px solid var(--border-colored);
+}
+
+.border-dashed {
+    border: 4px dashed var(--header-bg-color) !important;
+    padding: .7em;
+    // margin: 2em 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+.thumbnail-avatar {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: cover;
+}
+
+hr.sweet {
+    border: 0;
+    margin: 1em 0;
+    border-top: 2px dashed rgba(245,106,106,0.2);
+}
+
+hr.empty {
+    border: none;
+    margin: 0.5em 0;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.author_list_img{
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hovered-show{
+    display: none;
+}
+.hovered-show:hover {
+    display: inline-block;
+}
+
+.mt{
+    margin-top: 1em;
+}
+.mb{
+    margin-bottom: 1em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.col {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .row{
+        flex-direction: column;
+    } 
+}

@@ -1,0 +1,88 @@
+p{
+    line-height: 1.4;
+    padding: .5em;
+    white-space: pre-wrap;
+}
+
+img {
+    max-width: 100%;
+}
+svg{
+    height: inherit;
+    width: inherit;
+    fill: currentColor;
+    height: 45px;
+    width: 45px;
+}
+p svg {
+    height: 1em;
+    width: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    // font-family: var(--second-font);
+    font-weight: 700;
+    margin: 1em 0;
+    
+    line-height: 1.2;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1 {font-size: 2.4em;}
+
+h2 {font-size: 1.2em;}
+
+h3 {font-size: 1.1em;}
+
+h4 {font-size: 1em;}
+
+h5 {font-size: 0.9em;}
+
+h6 {font-size: 0.8em;}
+
+input, select {
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 20px;
+    
+    border: none;
+    max-width: 100%;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    // width: 100%;
+}
+
+button {
+    padding: 11.5px 15px;
+    border-radius: 20px;
+    border: none;
+    background: var(--color04, #fff);
+    color: var(--black, #000);
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+hr{
+    border: none;
+    border-top: 3px solid var(--color04);
+    margin: 1em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
